@@ -1,0 +1,23 @@
+# Android Studio
+**/*.idea
+**/*.iml
+**/*.hprof
+
+# Android
+/local.properties
+
+# Gradle
+.gradle
+/build
+
+# Temp Files
+**/*.swp
+**/.DS_Store
+
+# Signing
+**/*.keystore
+
+# Fabric
+**/*.pyc
+
+/captures

@@ -1,6 +1,20 @@
 <resources>
-    <string name="app_name">CEVExampleClient</string>
 
-    <string name="MainActivity_label">Main Activity</string>
+    <string name="Menu_logout">Log Out</string>
+
+    <string name="AuthorizationActivity_title">FHIR Client</string>
+    <string name="AuthorizationActivity_headline">Authorization</string>
+    <string name="AuthorizationActivity_text">Connect to the FHIR test server using an existing account. See the project documentation for information on how to get started.</string>
+    <string name="AuthorizationActivity_actionConnect">Connect</string>
+    <string name="AuthorizationActivity_configurationError">Error fetching configuration</string>
+    <string name="AuthorizationActivity_authorizationError">Authorization failed</string>
+    <string name="AuthorizationActivity_tokenError">Token exchange failed</string>
+
+    <string name="PatientListActivity_title">Patient List</string>
+    <string name="PatientListActivity_patientName">%2$s, %1$s</string>
+    <string name="PatientListActivity_dateOfBirth">Birthdate: %1$s</string>
+    <string name="PatientListActivity_gender">Gender: %1$s</string>
+    <string name="PatientListActivity_nameNotProvided">Unknown</string>
+    <string name="PatientListActivity_tokenRefreshError">Authentication expired</string>
 
 </resources>

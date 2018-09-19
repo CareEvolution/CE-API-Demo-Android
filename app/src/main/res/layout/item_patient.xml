@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/spacer_single"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacer_double"
+        android:layout_marginEnd="@dimen/spacer_double"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textColor="@android:color/primary_text_light"
+        tools:text="Last, First" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacer_double"
+        android:layout_marginEnd="@dimen/spacer_double"
+        android:textAppearance="@android:style/TextAppearance.Material.Small"
+        android:textColor="@android:color/primary_text_light"
+        tools:text="Birthdate: 01/01/1970 • Gender: Unknown" />
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE resources [<!ENTITY scheme "ceapidemo">]>
+<resources>
+
+    <string name="OAuth_discoveryDocument"></string>
+    <string name="OAuth_clientId"></string>
+    <string name="OAuth_scope">api offline_access api</string>
+    <string name="OAuth_redirectScheme">&scheme;</string>
+    <string name="OAuth_redirectUri">&scheme;://oauth</string>
+
+    <string name="FHIR_serverBase"></string>
+
+</resources>

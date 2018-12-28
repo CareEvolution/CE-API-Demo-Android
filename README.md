@@ -48,9 +48,7 @@ One you've completed the sections above you can launch the app in an emulator or
 
 ## Custom URI Schemes, Deep Links, and App Links
 
-This demo app is configured to use a [Deep Link](https://developer.android.com/training/app-links/#app-links-vs-deep-links) with a custom URI scheme.  This mechanism was chosen because it won't trigger a chooser and works without server-side configuration.  It is suitable for apps running on a secure network.
-
-> **Note!** If the app you're developing is running on a public server, or being distributed through *Google Play*, you will probably want to change the code to use the more secure [App Links](https://developer.android.com/training/app-links/#add-app-links) instead.
+The demo app is configured to use a [Deep Link](https://developer.android.com/training/app-links/#app-links-vs-deep-links) with a custom URI scheme.  This mechanism was chosen because it won't trigger a chooser dialog and works without server-side configuration.  Consider implementing an [App Link](https://developer.android.com/training/app-links/#add-app-links) instead.
 
 The default configuration uses `ceapidemo:path?parameter=value` for its URI scheme.  To change this:
 

@@ -14,7 +14,7 @@ If using the CareEvolution public test server, [contact us](https://fhir.docs.ca
 
 If using your own HIEBus server, your site administrator will need to set up an OAuth client as explained in the [FHIR Administration Guide](https://fhir.docs.careevolution.com/config/authentication.html).  Here are some specific settings to use for the demo app:
 
-* Use `ceapidemo://oauth` for the Redirect URI. See [Custom URI Schemes, Deep Links, and App Links](#custom-uri-schemes-deep-links-and-app-links) below for more details.
+* Use `ceapidemo:oauth` for the Redirect URI. See [Custom URI Schemes, Deep Links, and App Links](#custom-uri-schemes-deep-links-and-app-links) below for more details.
 * Check the box for **SMART app**.
 * Set the **OpenID Connect flow** to `AuthorizationCode`.
 * Add the following values to **Allowed scopes**:
@@ -31,7 +31,7 @@ The `config.xml` file is used to specify the OAuth connection parameters.  Befor
 ```
 <string name="OAuth_discoveryDocument">https://{your-domain-name}/{your-discovery-document}/</string>
 <string name="OAuth_clientId">{OAuth clientID configured on the server}</string>
-<string name="FHIR_serverBase">https://{your-domain-name}/{path-to-STU3-endpoint}</string>
+<string name="FHIR_serverBase">https://{your-careevolution-url}/{path-to-STU3-endpoint}</string>
 ```
 
 NOTE: If you're using GitHub to fork this project, you should run the following command before committing any changes to your fork.  This will make git ignore your local changes:
@@ -48,7 +48,7 @@ One you've completed the sections above you can launch the app in an emulator or
 
 ## Custom URI Schemes, Deep Links, and App Links
 
-The demo app is configured to use a [Deep Link](https://developer.android.com/training/app-links/#app-links-vs-deep-links) with a custom URI scheme.  This mechanism was chosen because it won't trigger a chooser dialog and works without server-side configuration.  Consider implementing an [App Link](https://developer.android.com/training/app-links/#add-app-links) instead.
+The demo app is configured to use a [Deep Link](https://developer.android.com/training/app-links/#app-links-vs-deep-links) with a custom URI scheme.  This mechanism was chosen because it won't trigger a chooser dialog and works without server-side configuration.  Consider implementing a more robust [App Link](https://developer.android.com/training/app-links/#add-app-links) instead.
 
 The default configuration uses `ceapidemo:path?parameter=value` for its URI scheme.  To change this:
 

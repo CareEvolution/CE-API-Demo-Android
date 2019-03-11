@@ -14,7 +14,7 @@ If using the CareEvolution public test server, [contact us](https://fhir.docs.ca
 
 If using your own HIEBus server, your site administrator will need to set up an OAuth client as explained in the [FHIR Administration Guide](https://fhir.docs.careevolution.com/config/authentication.html).  Here are some specific settings to use for the demo app:
 
-* Use `ceapidemo:oauth` for the Redirect URI. See [Custom URI Schemes, Deep Links, and App Links](#custom-uri-schemes-deep-links-and-app-links) below for more details.
+* Use `ceapidemo://oauth` for the Redirect URI. See [Custom URI Schemes, Deep Links, and App Links](#custom-uri-schemes-deep-links-and-app-links) below for more details.
 * Check the box for **SMART app**.
 * Set the **OpenID Connect flow** to `AuthorizationCode`.
 * Add the following values to **Allowed scopes**:

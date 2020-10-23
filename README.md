@@ -18,9 +18,9 @@ If using your own HIEBus server, your site administrator will need to set up an 
 * Check the box for **SMART app**.
 * Set the **OpenID Connect flow** to `AuthorizationCode`.
 * Add the following values to **Allowed scopes**:
-      * `offline_access` - This enables refreshTokens ad the ability to renew an accessToken after it expires. This allows the app to remain logged-in between sessions.
-      * `user/*.read` - This grants read access to the FHIR APIs
-      * `api` - This grants access to all of CareEvolutions APIs
+   * `offline_access` - This enables refreshTokens ad the ability to renew an accessToken after it expires. This allows the app to remain logged-in between sessions.
+   * `user/*.read` - This grants read access to the FHIR APIs
+   * `api` - This grants access to all of CareEvolutions APIs
 
 ### Configuring Your Server Connection Info
 
